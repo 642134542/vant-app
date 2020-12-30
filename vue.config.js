@@ -7,6 +7,9 @@ const CompressionPlugin = require('compression-webpack-plugin');
 function resolve(dir) {
   return path.resolve(__dirname, dir);
 }
+const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
+
 module.exports = {
   // 基本路径
   publicPath: '/',
@@ -43,6 +46,21 @@ module.exports = {
         deleteOriginalAssets: false, // 不删除源文件
       }),
     ]
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          autoprefixer({
+            browsers: ['Android >= 4.0', 'iOS >= 8'],
+          }),
+          pxtorem({
+            rootValue: 37.5,
+            propList: ['*']
+          })
+        ]
+      }
+    }
   },
   chainWebpack: config => {
     config
