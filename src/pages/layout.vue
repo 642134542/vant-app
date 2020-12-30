@@ -1,22 +1,19 @@
 <template>
-  <el-container class="app-container">
-    <el-header height="48px" class="app-header">
-      <div class="header-bg-small"></div>
-      <com-header></com-header>
-    </el-header>
-    <el-main class="app-main">
-      <router-view/>
-    </el-main>
-  </el-container>
+  <div class="container">
+    <div class="main">
+      <router-view></router-view>
+    </div>
+    <home-footer></home-footer>
+  </div>
 </template>
 
 <script>
-import comHeader from './comHeader';
+import homeFooter from './homeFooter';
 
 export default {
   name: 'layout',
   components: {
-    comHeader,
+    homeFooter,
   },
 };
 </script>

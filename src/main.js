@@ -9,9 +9,10 @@ import 'amfe-flexible';
 import router from "./router";
 import store from "./store";
 
-import './permission'; // permission control
+// import './permission'; // permission control
 
-import 'less/index.less';
+import './less/index.less';
+import './less/app.less';
 
 Vue.use(Vant);
 

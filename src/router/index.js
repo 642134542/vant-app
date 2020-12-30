@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Layout from '@/pages/layout';
-import homeLayout from '@/pages/homeLayout';
-import backLayout from '@/pages/backLayout';
+import layout from '../pages/layout';
 
 Vue.use(Router);
 
@@ -17,6 +15,20 @@ export const staticRouterMap = [
       text: '智能检索',
     },
     redirect: { name: 'home' },
+  },
+  {
+    path: '/home',
+    component: layout,
+    meta: {
+      group: 'home',
+      text: '首页',
+    },
+    redirect: { name: 'home' },
+    children: [{
+      path: '',
+      name: 'home',
+      component: () => import('@/components/homePage'),
+    }],
   },
 ];
 export const asyncRouterMap = [
