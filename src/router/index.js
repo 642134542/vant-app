@@ -12,7 +12,7 @@ export const staticRouterMap = [
     path: '/',
     meta: {
       group: 'home',
-      text: '智能检索',
+      text: '主页',
     },
     redirect: { name: 'home' },
   },
@@ -21,13 +21,64 @@ export const staticRouterMap = [
     component: layout,
     meta: {
       group: 'home',
-      text: '首页',
     },
     redirect: { name: 'home' },
     children: [{
       path: '',
       name: 'home',
-      component: () => import('@/components/homePage'),
+      component: () => import('@/components/homePage/index'),
+    }],
+  },
+  {
+    path: '/serve',
+    component: layout,
+    meta: {
+      group: 'serveCenter',
+    },
+    redirect: { name: 'serveCenter' },
+    children: [{
+      path: '',
+      name: 'serveCenter',
+      component: () => import('@/components/serveCenter/index'),
+    }],
+  },
+  {
+    path: '/investigate',
+    component: layout,
+    meta: {
+      group: 'investigate',
+    },
+    redirect: { name: 'investigate' },
+    children: [{
+      path: '',
+      name: 'investigate',
+      component: () => import('@/components/investigateLog/index'),
+    }],
+  },
+  {
+    path: '/message',
+    component: layout,
+    meta: {
+      group: 'message',
+    },
+    redirect: { name: 'message' },
+    children: [{
+      path: '',
+      name: 'message',
+      component: () => import('@/components/message/index'),
+    }],
+  },
+  {
+    path: '/account',
+    component: layout,
+    meta: {
+      group: 'account',
+    },
+    redirect: { name: 'account' },
+    children: [{
+      path: '',
+      name: 'account',
+      component: () => import('@/components/account/index'),
     }],
   },
 ];
