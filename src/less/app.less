@@ -40,7 +40,7 @@
     height: 48px;
     background-image: url("../assets/icon-home.png");
     background-repeat: no-repeat;
-    // background-size: 0 0;
+    background-size: cover;
     &.nav-icon-server {
       background-image: url("../assets/icon-server.png");
     }
@@ -53,6 +53,14 @@
     &.nav-icon-account {
       background-image: url("../assets/icon-account.png");
     }
+  }
+  &.router-link-exact-active {
+    color: @theme;
+  }
+}
+.nav-item.router-link-active {
+  &>.text {
+    color: @theme;
   }
 }
 

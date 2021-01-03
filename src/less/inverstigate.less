@@ -1,0 +1,230 @@
+@import "./variable";
+
+.inverstigate-header {
+  height: 34px;
+  line-height: 34px;
+  margin-top: 23px;
+  margin-bottom: 55px;
+  position: relative;
+  .invest-title {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.in-icon-filter {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../assets/icon-filter.png") no-repeat;
+  background-size: cover;
+}
+.inverstigate-main {
+  .van-tabs__nav--line {
+    margin: 0 200px;
+  }
+  .van-tab__text--ellipsis {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .van-tabs__line {
+    background-color: @theme;
+  }
+  .van-tab--active {
+    .van-tab__text--ellipsis {
+      color: @theme;
+    }
+  }
+}
+.clue-card {
+  min-height: 185px;
+  padding: 28px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 48px;
+  h4 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 24px;
+    color: #666;
+  }
+}
+.main {
+  padding-bottom: 110px;
+}
+.clue-card-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../assets/icon-clue.png") no-repeat;
+  vertical-align: middle;
+  margin-right: 16px;
+  background-size: cover;
+}
+.van-empty__description {
+  font-size: 28px;
+}
+.search-dialog.van-popup {
+  top: 70px;
+  left: 0 !important;
+  right: 0;
+  border-top: 1px solid #ccc;
+  .van-cell {
+    font-size: 24px;
+  }
+  .van-picker__cancel, .van-picker__confirm {
+    font-size: 24px;
+  }
+  .van-picker-column {
+    font-size: 24px;
+  }
+}
+
+.van-nav-bar {
+  margin-top: 23px;
+  line-height: 48px;
+  margin-bottom: 56px;
+  position: relative;
+  .van-nav-bar__content {
+    height: 48px;
+  }
+  .in-icon-filter-right {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/icon-filter.png") no-repeat;
+    background-size: cover;
+  }
+  .in-icon-plus-right {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/icon-plus.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-plus {
+    font-size: 24px;
+  }
+}
+.van-nav-bar__title {
+  font-size: 34px;
+  color: #333;
+  font-weight: bold;
+}
+.log-detail-box {
+  position: relative;
+  padding: 0 32px 110px;
+}
+
+.log-detail-card {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  // min-height: 500px;
+}
+.log-detail-card > span {
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background: #f0f0f0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: url("../assets/icon-time-line.png") no-repeat;
+    background-size: cover;
+  }
+}
+.log-detail-card-content {
+  margin-left: 56px;
+  margin-bottom: 24px;
+}
+.log-detail-first-line {
+  font-size: 24px;
+  .time {
+    color: #333;
+    font-weight: bold;
+  }
+  .log-qb {
+    color: @theme;
+    margin: 0 10px;
+  }
+  .log-export {
+    color: #888;
+  }
+}
+.log-detail-row {
+  font-size: 24px;
+  color: #666;
+  line-height: 36px;
+  margin-top: 5px;
+  label {
+    font-weight: bold;
+  }
+  .log-detail-fj {
+    color: @theme;
+  }
+}
+
+.suspect-card {
+  min-height: 296px;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.suspect-img {
+  width: 182px;
+  height: 264px;
+  background: #ccc;
+  margin-right: 24px;
+}
+.suspect-card-row {
+  font-size: 24px;
+  line-height: 36px;
+  color: #333;
+  label {
+    color: #666;
+  }
+  span {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

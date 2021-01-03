@@ -13,6 +13,7 @@ import store from "./store";
 
 import './less/index.less';
 import './less/app.less';
+import './less/inverstigate.less';
 
 Vue.use(Vant);
 
