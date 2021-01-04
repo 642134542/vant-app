@@ -1,0 +1,98 @@
+@import "./variable";
+
+.swiper {
+  width: 100%;
+  height: 5rem;
+  .van-swipe{
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .custom-indicator {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: #fff;
+    background: #fff;
+  }
+}
+
+.my-apply{
+  padding: 32px;
+  .apply-card{
+    padding: 32px 16px;
+    border-top: 1px solid #f0f0f0;
+    .card-title{
+      .title{
+        font-size: 28px;
+        font-weight: bold;
+        color: @text;
+      }
+      .time{
+        font-size: 24px;
+      }
+    }
+    .card-content{
+      font-size: 24px;
+      margin: 16px 0;
+      line-height: 32px;
+    }
+    .card-operation{
+      div{
+        display: flex;
+        align-items: center;
+        span{
+          font-size: 24px;
+        }
+      }
+
+    }
+  }
+
+}
+.service-hall{
+  padding: 32px;
+  .hall-card{
+    padding: 32px 16px;
+    border-top: 1px solid #f0f0f0;
+    &.hall-item{
+      display: flex;
+      align-items: center;
+      img{
+        width: 36px;
+      }
+     .item-content{
+       margin-left: 16px;
+       .item-name{
+         font-size: 26px;
+         color: @text;
+       }
+       .item-status{
+         color: @sub-text;
+         font-size: 24px;
+         .status-pending{
+           margin-right: 20px;
+         }
+       }
+     }
+    }
+  }
+}
+.investigate-log{
+  padding: 32px;
+}
+// 二级标题
+.sub-title{
+  span{
+    font-size: 30px;
+    color: @text;
+    font-weight: bold;
+  }
+  margin-bottom: 16px;
+}
