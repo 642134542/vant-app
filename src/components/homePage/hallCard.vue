@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-row>
-      <van-col span="12" class="hall-card hall-item" v-for="(item, index) in hallArr" :key="index" >
+      <van-col span="12" class="hall-card hall-item" v-for="(item, index) in hallArr" :key="index" v-if="item.hasPer === 1">
         <img :src="item.icon">
         <div class="item-content">
           <div class="item-name">{{item.name}}</div>
@@ -23,70 +23,81 @@
       return {
         hallArr: [
           {
-            name: '银联账单/布控申请',
-            icon: require('../../assets/icon-wait.png'),
-            pending: 1,
-            inProcess: 2
+            name: '银联账单/布控申请', // 名称
+            icon: require('../../assets/icon-wait.png'), // icon
+            pending: 1, // 待处理
+            inProcess: 2, // 处理中
+            hasPer: 1 // 是否有新增权限 1为有，0为没有
           },
           {
             name: '高速公路车辆查询',
             icon: require('../../assets/icon-wait.png'),
             pending: 6,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '反诈中心查询申请',
             icon: require('../../assets/icon-wait.png'),
             pending: 11,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '外卖信息查询申请',
             icon: require('../../assets/icon-wait.png'),
             pending: 1,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '互联网企业服务513',
             icon: require('../../assets/icon-wait.png'),
             pending: 6,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '网约车相关申请',
             icon: require('../../assets/icon-wait.png'),
             pending: 11,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '1020话单申请',
             icon: require('../../assets/icon-wait.png'),
             pending: 1,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '出租车相关申请',
             icon: require('../../assets/icon-wait.png'),
             pending: 6,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '刑事技术送检',
             icon: require('../../assets/icon-wait.png'),
             pending: 11,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '视频侦查服务',
             icon: require('../../assets/icon-wait.png'),
             pending: 1,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
           {
             name: '互联网追逃服务',
             icon: require('../../assets/icon-wait.png'),
             pending: 6,
-            inProcess: 2
+            inProcess: 2,
+            hasPer: 1
           },
         ]
       }

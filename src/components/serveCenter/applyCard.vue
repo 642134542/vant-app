@@ -10,10 +10,10 @@
       <div>简述：{{item.applyResume}}</div>
     </div>
     <div class="card-operation flex-between">
-      <div><i class="icon icon-agree"></i><span>同意</span></div>
-      <div><i class="icon icon-refund"></i><span>退办</span></div>
-      <div><i class="icon icon-reject"></i><span>驳回</span></div>
-      <div><i class="icon icon-supplement"></i><span>补充</span></div>
+      <div><i class="icon icon-check"></i><span>查看</span></div>
+      <div><i class="icon icon-supplement"></i><span>编辑</span></div>
+      <div><i class="icon icon-cancel"></i><span>撤销</span></div>
+      <div><i class="icon icon-delete"></i><span>删除</span></div>
     </div>
   </div>
   </div>
@@ -31,6 +31,24 @@
               applyTime: '2020-11-18 13:25:55',
               applyNum: '案件编号：A400059506900500000（张一公交车猥亵案)',
               applyResume: '张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案'
+            },
+            {
+              applyTitle: '网约车申请',
+              applyTime: '2020-11-18 13:25:55',
+              applyNum: '案件编号：A400059506900500000（张一公交车猥亵案)',
+              applyResume: '吧啦啦啦啦啦吧啦啦啦啦啦啦啦啦啦'
+            },
+            {
+              applyTitle: '反诈中心申请',
+              applyTime: '2020-11-18 13:25:55',
+              applyNum: '案件编号：A400059506900500000（张一公交车猥亵案)',
+              applyResume: '吧啦啦啦啦啦吧啦啦啦啦啦啦啦啦啦'
+            },
+            {
+              applyTitle: '网约车申请',
+              applyTime: '2020-11-18 13:25:55',
+              applyNum: '案件编号：A400059506900500000（张一公交车猥亵案)',
+              applyResume: '吧啦啦啦啦啦吧啦啦啦啦啦啦啦啦啦'
             },
             {
               applyTitle: '网约车申请',

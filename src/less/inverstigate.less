@@ -1,20 +1,5 @@
 @import "./variable";
 
-.inverstigate-header {
-  height: 34px;
-  line-height: 34px;
-  margin-top: 23px;
-  margin-bottom: 55px;
-  position: relative;
-  .invest-title {
-    display: inline-block;
-    width: 100%;
-    color: #333;
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-  }
-}
 .in-icon-filter {
   position: absolute;
   top: 0;
@@ -26,27 +11,12 @@
   background-size: cover;
 }
 .inverstigate-main {
-  .van-tabs__nav--line {
-    margin: 0 200px;
-  }
-  .van-tab__text--ellipsis {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  .van-tabs__line {
-    background-color: @theme;
-  }
-  .van-tab--active {
-    .van-tab__text--ellipsis {
-      color: @theme;
-    }
-  }
 }
 .clue-card {
   min-height: 185px;
   padding: 28px;
   box-sizing: border-box;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid @line;
   margin: 0 48px;
   h4 {
     color: #333;
@@ -73,21 +43,7 @@
 .van-empty__description {
   font-size: 28px;
 }
-.search-dialog.van-popup {
-  top: 70px;
-  left: 0 !important;
-  right: 0;
-  border-top: 1px solid #ccc;
-  .van-cell {
-    font-size: 24px;
-  }
-  .van-picker__cancel, .van-picker__confirm {
-    font-size: 24px;
-  }
-  .van-picker-column {
-    font-size: 24px;
-  }
-}
+
 
 .van-nav-bar {
   margin-top: 23px;
@@ -143,7 +99,7 @@
   display: inline-block;
   height: 100%;
   width: 1px;
-  background: #f0f0f0;
+  background: @line;
   position: absolute;
   top: 0;
   bottom: 0;
