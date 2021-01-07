@@ -2,8 +2,8 @@
   <div>
     <div class="common-card" v-for="(item, index) in contentArr" :key="index" @click="toDetail">
     <div class="card-title flex-between">
-      <div class="title">{{item.applyTitle}}</div>
-      <div class="time">{{item.applyTime}}</div>
+      <div class="title-left">{{item.applyTitle}}</div>
+      <div class="title-right">{{item.applyTime}}</div>
     </div>
     <div class="card-content">
       <div>{{item.applyNum}}</div>

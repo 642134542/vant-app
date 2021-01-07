@@ -1,9 +1,10 @@
 <template>
   <div>
     <van-nav-bar
-            title="日志详情"
-            left-arrow
-            @click-left="onClickLeft">
+      title="日志详情"
+      left-text="返回"
+      left-arrow
+      @click-left="onClickLeft">
       <template #left>
         <van-icon name="arrow-left" size="24"/>
       </template>

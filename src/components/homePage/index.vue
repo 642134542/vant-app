@@ -9,7 +9,7 @@
         </van-swipe>
       </div>
       <div class="my-apply">
-        <div class="sub-title"><i class="icon icon-wait"></i><span>我的申请</span></div>
+        <div class="sub-title"><i class="icon icon-wait"></i><span>最近更新</span></div>
         <apply-card></apply-card>
       </div>
       <div class="gap"></div>

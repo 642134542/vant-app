@@ -40,6 +40,10 @@ export const staticRouterMap = [
       path: '',
       name: 'serveCenter',
       component: () => import('@/components/serveCenter/index'),
+    }, {
+      path: ':type/:id',
+      name: 'serveDetail',
+      component: () => import('@/components/serveCenter/serveDetail/index'),
     }],
   },
   {

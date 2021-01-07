@@ -1,0 +1,28 @@
+@import "./variable";
+
+// van-nav-bar
+.van-nav-bar{
+  margin-bottom: 23px;
+  .van-nav-bar__left, .van-nav-bar__arrow{
+    font-size: 28px;
+  }
+  .van-nav-bar__title{
+    font-size: 34px;
+  }
+}
+
+// tab
+.van-tabs__wrap{
+  .van-tab__text--ellipsis {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .van-tabs__line {
+    background-color: @theme;
+  }
+  .van-tab--active {
+    .van-tab__text--ellipsis {
+      color: @theme;
+    }
+  }
+}

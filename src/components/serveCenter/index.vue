@@ -15,18 +15,18 @@
               placeholder="线索名称"/>
           </van-form>
         </van-popup>
-        <span class="header-title">服务申请</span>
+        <span class="header-title">服务中心</span>
       </h3>
       <div class="serve-main">
         <van-tabs v-model="activeName">
-          <van-tab title="我的申请" name="first">
-            <apply-card></apply-card>
+          <van-tab title="我的申请" name="apply">
+            <Card :activeName="activeName"></Card>
           </van-tab>
-          <van-tab title="我的审批" name="second">
-            <approval-card></approval-card>
+          <van-tab title="我的审批" name="approval">
+            <Card :activeName="activeName"></Card>
           </van-tab>
-          <van-tab title="我的待办" name="three">
-            <deal-card></deal-card>
+          <van-tab title="我的待办" name="deal">
+            <Card :activeName="activeName"></Card>
           </van-tab>
         </van-tabs>
       </div>
@@ -37,21 +37,17 @@
 
 <script>
 import homeFooter from '../../pages/homeFooter';
-import applyCard from "./applyCard";
-import approvalCard from "./approvalCard";
-import dealCard from "./dealCard";
+import Card from "./card";
 
 export default {
   name: 'serveIndex',
   components: {
     homeFooter,
-    applyCard,
-    approvalCard,
-    dealCard
+    Card,
   },
   data () {
     return {
-      activeName: 'first', // tab的状态
+      activeName: 'apply', // tab的状态
       showPopover: false,
       form: {
         clueName: '',

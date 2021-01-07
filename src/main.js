@@ -16,6 +16,7 @@ import './less/index.less';
 import './less/app.less';
 import './less/inverstigate.less';
 import './less/homePage.less';
+import './less/van.less'
 
 Vue.use(Vant);
 Vue.use(Lazyload);

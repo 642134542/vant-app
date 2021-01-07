@@ -70,72 +70,6 @@
   background-color: @gap;
 }
 
-// icon
-.icon{
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  vertical-align: middle;
-  margin-right: 16px;
-}
-.icon-wait{
-  background: url("../assets/icon-wait.png") no-repeat;
-  margin-right: 16px;
-  background-size: cover;
-}
-.icon-agree, .icon-refund, .icon-reject, .icon-supplement, .icon-check, .icon-cancel, .icon-delete, .icon-reply, .icon-end-case, .icon-application{
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-.icon-agree{
-  background: url("../assets/icon-agree.png") no-repeat;
-  background-size: cover;
-}
-.icon-refund{
-  background: url("../assets/icon-refund.png") no-repeat;
-  background-size: cover;
-}
-.icon-reject{
-  background: url("../assets/icon-reject.png") no-repeat;
-  background-size: cover;
-}
-.icon-supplement{
-  background: url("../assets/icon-supplement.png") no-repeat;
-  background-size: cover;
-}
-.icon-service-hall{
-  background: url("../assets/icon-service-hall.png") no-repeat;
-  background-size: cover;
-}
-.icon-investigate{
-  background: url("../assets/icon-investigate.png") no-repeat;
-  background-size: cover;
-}
-.icon-check{
-  background: url("../assets/icon-check.png") no-repeat;
-  background-size: cover;
-}
-.icon-cancel{
-  background: url("../assets/icon-cancel.png") no-repeat;
-  background-size: cover;
-}
-.icon-delete{
-  background: url("../assets/icon-delete.png") no-repeat;
-  background-size: cover;
-}
-.icon-reply{
-  background: url("../assets/icon-reply.png") no-repeat;
-  background-size: cover;
-}
-.icon-end-case{
-  background: url("../assets/icon-end-case.png") no-repeat;
-  background-size: cover;
-}
-.icon-application{
-  background: url("../assets/icon-application.png") no-repeat;
-  background-size: cover;
-}
 // color
 .red{
   color: @warning;
@@ -176,40 +110,30 @@
   }
 }
 
-// tab
-.van-tabs__wrap{
-  .van-tab__text--ellipsis {
-    font-size: 28px;
-    line-height: 30px;
-  }
-  .van-tabs__line {
-    background-color: @theme;
-  }
-  .van-tab--active {
-    .van-tab__text--ellipsis {
-      color: @theme;
-    }
-  }
-}
-
 // card ---申请，左申请名称 右时间 下面详情 底部操作
 .common-card{
-  padding: 32px 48px 16px;
+  margin: 0 48px 32px 48px;
+  padding-top: 32px;
   border-top: 1px solid @line;
   .card-title{
-    .title{
+    .title-left{
       font-size: 28px;
       font-weight: bold;
       color: @text;
     }
-    .time{
+    .title-right{
       font-size: 24px;
+    }
+    &.bottom-line{
+      margin-bottom: 24px;
+      height: 60px;
+      border-bottom: 1px solid @line;
     }
   }
   .card-content{
     font-size: 24px;
     margin: 16px 0 24px;
-    line-height: 32px;
+    line-height: 36px;
     > div{
       margin-bottom: 10px;
     }
@@ -223,4 +147,82 @@
       }
     }
   }
+  &.no-top-line{
+    border-top: none;
+  }
+}
+
+// icon
+.icon{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.icon-wait{
+  background: url("../assets/icon-wait.png") no-repeat;
+  margin-right: 16px;
+  background-size: cover;
+}
+.icon-agree, .icon-refund, .icon-reject, .icon-edit, .icon-check, .icon-cancel, .icon-delete, .icon-reply, .icon-end-case, .icon-application,.icon-right-arrow, .icon-activation{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.icon-agree{
+  background: url("../assets/icon-agree.png") no-repeat;
+  background-size: cover;
+}
+.icon-refund{
+  background: url("../assets/icon-refund.png") no-repeat;
+  background-size: cover;
+}
+.icon-reject{
+  background: url("../assets/icon-reject.png") no-repeat;
+  background-size: cover;
+}
+.icon-edit{
+  background: url("../assets/icon-edit.png") no-repeat;
+  background-size: cover;
+}
+.icon-service-hall{
+  background: url("../assets/icon-service-hall.png") no-repeat;
+  background-size: cover;
+}
+.icon-investigate{
+  background: url("../assets/icon-investigate.png") no-repeat;
+  background-size: cover;
+}
+.icon-check{
+  background: url("../assets/icon-check.png") no-repeat;
+  background-size: cover;
+}
+.icon-cancel{
+  background: url("../assets/icon-cancel.png") no-repeat;
+  background-size: cover;
+}
+.icon-delete{
+  background: url("../assets/icon-delete.png") no-repeat;
+  background-size: cover;
+}
+.icon-reply{
+  background: url("../assets/icon-reply.png") no-repeat;
+  background-size: cover;
+}
+.icon-end-case{
+  background: url("../assets/icon-end-case.png") no-repeat;
+  background-size: cover;
+}
+.icon-application{
+  background: url("../assets/icon-application.png") no-repeat;
+  background-size: cover;
+}
+.icon-right-arrow{
+  background: url("../assets/icon-right-arrow.png") no-repeat;
+  background-size: cover;
+}
+.icon-activation{
+  background: url("../assets/icon-activation.png") no-repeat;
+  background-size: cover;
 }
