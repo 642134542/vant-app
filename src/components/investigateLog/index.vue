@@ -2,10 +2,10 @@
   <div class="container">
     <div class="main">
       <h3 class="page-header">
-        <i class="in-icon-filter" @click="showPopover = !showPopover"></i>
+        <i class="icon in-icon-filter" @click="showPopover = !showPopover"></i>
         <van-popup class="search-dialog" v-model="showPopover"
                    :overlay="false" :get-container="getContainer"
-                   position="top" :style="{ height: '30%' }">
+                   position="top" :style="{ height: '100%' }">
           <van-form>
             <van-field
                     v-model="form.clueName"

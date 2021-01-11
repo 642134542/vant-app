@@ -43,7 +43,7 @@
     },
     methods: {
       toDetail () {
-        alert('点击我查看详情，暂未开发')
+        this.$router.push({name: 'serveDetail'})
       }
     }
   }

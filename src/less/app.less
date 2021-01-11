@@ -86,18 +86,25 @@
   margin-bottom: 55px;
   position: relative;
   .search-dialog.van-popup {
-    top: 70px;
+    top: 120px;
     left: 0 !important;
     right: 0;
-    border-top: 1px solid #ccc;
     .van-cell {
       font-size: 24px;
+      padding: 24px;
+      line-height: 24px;
+      .van-radio-group{
+        height: 24px;
+      }
     }
     .van-picker__cancel, .van-picker__confirm {
       font-size: 24px;
     }
     .van-picker-column {
       font-size: 24px;
+    }
+    .van-field__label{
+      width: 3rem;
     }
   }
   .header-title {
@@ -224,5 +231,19 @@
 }
 .icon-activation{
   background: url("../assets/icon-activation.png") no-repeat;
+  background-size: cover;
+}
+.icon-plus{
+  position: absolute;
+  top: 0;
+  right: 40px;
+  background: url("../assets/icon-plus.png") no-repeat;
+  background-size: cover;
+}
+.in-icon-filter {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background: url("../assets/icon-filter.png") no-repeat;
   background-size: cover;
 }
