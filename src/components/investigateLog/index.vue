@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="main">
-      <h3 class="inverstigate-header">
-        <i class="in-icon-filter" @click="showPopover = !showPopover"></i>
+      <h3 class="page-header">
+        <i class="icon in-icon-filter" @click="showPopover = !showPopover"></i>
         <van-popup class="search-dialog" v-model="showPopover"
                    :overlay="false" :get-container="getContainer"
-                   position="top" :style="{ height: '30%' }">
+                   position="top" :style="{ height: '100%' }">
           <van-form>
             <van-field
                     v-model="form.clueName"
@@ -66,7 +66,7 @@
             </div>
           </van-form>
         </van-popup>
-        <span class="invest-title">侦查日志</span>
+        <span class="header-title">侦查日志</span>
       </h3>
       <div class="inverstigate-main">
         <van-tabs v-model="activeName">

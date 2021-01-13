@@ -7,7 +7,7 @@
       </router-link>
       <router-link class="nav-item" :to="{ path: '/serve' }">
         <i class="nav-item-icon nav-icon-server"></i>
-        <span class="text">服务中心</span></router-link>
+        <span class="text">服务申请</span></router-link>
       <router-link class="nav-item" :to="{ path: '/investigate' }">
         <i class="nav-item-icon nav-icon-log"></i>
         <span class="text">侦查日志</span></router-link>

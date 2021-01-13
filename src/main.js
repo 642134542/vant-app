@@ -3,6 +3,7 @@ import App from './App.vue'
 
 
 import Vant from 'vant';
+import { Lazyload } from 'vant';
 import 'vant/lib/index.css';
 import 'amfe-flexible';
 
@@ -14,9 +15,12 @@ import store from "./store";
 import './less/index.less';
 import './less/app.less';
 import './less/inverstigate.less';
+import './less/homePage.less';
+import './less/van.less';
+import './less/serveCenter.less';
 
 Vue.use(Vant);
-
+Vue.use(Lazyload);
 
 Vue.config.productionTip = false
 
