@@ -5,7 +5,7 @@
             left-arrow
             @click-left="onClickLeft">
       <template #left>
-        <van-icon name="arrow-left" size="24"/>
+        <van-icon name="arrow-left" size="32"/>
       </template>
       <template #right>
         <i class="in-icon-filter-right" @click="showPopover = !showPopover"></i>
