@@ -2,7 +2,7 @@
   <div class="tab-bar-wrap">
     <div class="tab-bar-wrap m-tabBar">
       <router-link class="nav-item" :to="{ path: '/home' }">
-        <i class="nav-item-icon"></i>
+        <i class="nav-item-icon nav-icon-home"></i>
         <span class="text">首页</span>
       </router-link>
       <router-link class="nav-item" :to="{ path: '/serve' }">

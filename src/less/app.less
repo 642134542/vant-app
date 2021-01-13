@@ -1,5 +1,8 @@
 @import "./variable";
 
+#app {
+  background-color: #f5f5f5;
+}
 .tab-bar-wrap {
   position: fixed;
   z-index: 5;
@@ -40,7 +43,7 @@
     height: 48px;
     background-image: url("../assets/icon-home.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     &.nav-icon-server {
       background-image: url("../assets/icon-server.png");
     }
@@ -61,6 +64,21 @@
 .nav-item.router-link-active {
   &>.text {
     color: @theme;
+  }
+  &>.nav-icon-home {
+    background-image: url("../assets/icon-home-s.png");
+  }
+  &>.nav-icon-server {
+    background-image: url("../assets/icon-server-s.png");
+  }
+  &>.nav-icon-log {
+    background-image: url("../assets/icon-log-s.png");
+  }
+  &>.nav-icon-message {
+    background-image: url("../assets/icon-message-s.png");
+  }
+  &>.nav-icon-account {
+    background-image: url("../assets/icon-account-s.png");
   }
 }
 
