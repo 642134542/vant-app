@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container account-container">
     <div class="main">
       <div class="account-bg">
         <div class="avatar-box">
