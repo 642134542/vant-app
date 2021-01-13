@@ -7,6 +7,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 function resolve(dir) {
   return path.resolve(__dirname, dir);
 }
+const myTheme = path.resolve(__dirname, "./src/less/vant.less");
 const autoprefixer = require('autoprefixer');
 const pxtorem = require('postcss-pxtorem');
 
@@ -49,6 +50,17 @@ module.exports = {
   },
   css: {
     loaderOptions: {
+      less: {
+        // 若 less-loader 版本小于 6.0，请移除 lessOptions 这一级，直接配置选项。
+        lessOptions: {
+          modifyVars: {
+            // 直接覆盖变量
+            // 'border-color': '#eee',
+            // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
+            hack: `true; @import "${myTheme}";`,
+          },
+        },
+      },
       postcss: {
         plugins: [
           autoprefixer({
@@ -59,8 +71,8 @@ module.exports = {
             propList: ['*']
           })
         ]
-      }
-    }
+      },
+    },
   },
   chainWebpack: config => {
     config
