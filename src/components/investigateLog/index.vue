@@ -12,20 +12,17 @@
                     name="线索名称"
                     label="线索名称"
                     placeholder="线索名称"/>
-            <van-field
-                    readonly
-                    clickable
-                    name="picker"
-                    :value="form.clueType"
-                    label="线索类别"
-                    placeholder="点击选择线索类别"
-                    @click="showPicker = true"/>
-            <van-popup v-model="showPicker" position="bottom">
+            <van-field name="picker"
+                       :value="form.clueType"
+                       label="线索类别"
+                       placeholder="点击选择线索类别"
+                       @click="showCluePicker = true"/>
+            <van-popup v-model="showCluePicker" position="bottom">
               <van-picker
                       show-toolbar
-                      :columns="columns"
-                      @confirm="onConfirm"
-                      @cancel="showPicker = false"/>
+                      :columns="clueColumns"
+                      @confirm="onClueConfirm"
+                      @cancel="showCluePicker = false"/>
             </van-popup>
             <van-field
                     v-model="form.clueDescribe"
@@ -41,16 +38,30 @@
                     readonly
                     clickable
                     name="datetimePicker"
-                    :value="form.timeValue"
-                    label="录入时间"
+                    :value="form.timeStartValue"
+                    label="录入时间开始"
                     placeholder="选择时间范围"
-                    @click="showTimePicker = true"/>
-            <van-popup v-model="showTimePicker" position="bottom">
+                    @click="showTimeStartPicker = true"/>
+            <van-popup v-model="showTimeStartPicker" position="bottom">
               <van-datetime-picker
                       type="date"
-                      :formatter="formatter"
-                      @confirm="onTimeConfirm"
-                      @cancel="showTimePicker = true"
+                      @confirm="onTimeStartConfirm"
+                      @cancel="showTimeStartPicker = true"
+                      title="选择年月日"/>
+            </van-popup>
+            <van-field
+                    readonly
+                    clickable
+                    name="datetimePicker"
+                    :value="form.timeEndValue"
+                    label="录入时间截止"
+                    placeholder="选择时间范围"
+                    @click="showTimeEndPicker = true"/>
+            <van-popup v-model="showTimeEndPicker" position="bottom">
+              <van-datetime-picker
+                      type="date"
+                      @confirm="onTimeEndConfirm"
+                      @cancel="showTimeEndPicker = true"
                       title="选择年月日"/>
             </van-popup>
             <div style="margin: 16px;">
@@ -99,27 +110,38 @@ export default {
   data() {
     return {
       activeName: 'first', // tab的状态
-      showPopover: false,
+      showPopover: false, // 弹窗的标识位
       form: {
         clueName: '',
         clueType: '', // 线索类别
         clueDescribe: '', // 线索描述
         ajbh: '',
-        timeValue: '', // 时间范围
+        timeStartValue: '', // 时间范围
+        timeEndValue: '', // 时间范围
       },
-      columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
-      showPicker: false,
-      showTimePicker: false,
+      clueColumns: ['杭州', '宁波', '温州', '嘉兴', '湖州'], // 线索的选择
+      showCluePicker: false, // 线索的标识位
+      showTimeStartPicker: false, // 时间的标识位
+      showTimeEndPicker: false,
     };
   },
   methods: {
-    onConfirm(value) {
-      this.form.clueType = value;
-      this.showPicker = false;
+    getContainer() {
     },
-    onTimeConfirm(value) {
-      this.form.timeValue = value;
-      this.showTimePicker = false;
+    /* 确定线索类别的回调 */
+    onClueConfirm(value) {
+      this.form.clueType = value;
+      this.showCluePicker = false;
+    },
+    /* 录入时间开始 */
+    onTimeStartConfirm(value) {
+      this.form.timeStartValue = `${value.getYear()}:${value.getMonth() + 1}:${value.getDate()}`;
+      this.showTimeStartPicker = false;
+    },
+    /* 录入时间开始 */
+    onTimeEndConfirm(value) {
+      this.form.timeEndValue = `${value.getYear()}:${value.getMonth() + 1}:${value.getDate()}`;
+      this.showTimeEndPicker = false;
     },
     linkToDetail() {
       this.$router.push({

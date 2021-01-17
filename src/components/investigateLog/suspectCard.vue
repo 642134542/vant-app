@@ -5,7 +5,7 @@
     </div>
     <div class="fl">
       <div class="suspect-card-row">
-        <label>嫌疑人姓名:</label>
+        <label>{{cardTitle}}姓名:</label>
         <span>张一</span>
       </div>
       <div class="suspect-card-row">
@@ -41,9 +41,15 @@
 </template>
 
 <script>
-  export default {
-    name: 'suspectCard',
-  };
+export default {
+  name: 'suspectCard',
+  props: {
+    cardTitle: {
+      type: String,
+      default: '嫌疑人',
+    },
+  }
+};
 </script>
 
 <style scoped>

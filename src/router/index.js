@@ -65,6 +65,18 @@ export const staticRouterMap = [
       path: ':id',
       name: 'logDetail',
       component: () => import('@/components/investigateLog/logDetail'),
+    }, {
+      path: 'suspect/list',
+      name: 'suspectList',
+      component: () => import('@/components/investigateLog/suspectList'),
+    }, {
+      path: 'stakeholder/list',
+      name: 'stakeHolderList',
+      component: () => import('@/components/investigateLog/stakeHolderList'),
+    }, {
+      path: 'suspect/:id',
+      name: 'suspectEditInfo',
+      component: () => import('@/components/investigateLog/suspectEditInfo'),
     }],
   },
   {
