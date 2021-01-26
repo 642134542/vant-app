@@ -13,7 +13,7 @@ const pxtorem = require('postcss-pxtorem');
 
 module.exports = {
   // 基本路径
-  publicPath: '/',
+  publicPath: './',
   // 输出文件目录
   outputDir: 'dist',
   assetsDir: 'assets', // 静态资源目录 (js, css, img, fonts)
@@ -67,8 +67,11 @@ module.exports = {
             browsers: ['Android >= 4.0', 'iOS >= 8'],
           }),
           pxtorem({
-            rootValue: 72,
-            propList: ['*']
+            rootValue: ({file}) => {
+              console.log('file', file);
+              return file.indexOf('vant') >= 0 ? '37.5' : '75';
+            },
+            propList: ['*'],
           })
         ]
       },

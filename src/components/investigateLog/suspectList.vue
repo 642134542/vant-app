@@ -28,6 +28,10 @@ export default {
     homeFooter,
     suspectCard,
   },
+  data() {
+    return {
+    };
+  },
   methods: {
     onClickLeft() {
       this.$router.push({

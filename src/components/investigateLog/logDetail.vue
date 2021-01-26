@@ -10,7 +10,16 @@
       </template>
       <template #right>
         <i class="in-icon-filter-right" @click="showPopover = !showPopover"></i>
-        <i class="in-icon-plus-right"></i>
+        <van-popover
+                v-model="showPlusPopover"
+                trigger="click"
+                :actions="popoverActions"
+                placement="bottom-end"
+                @select="onSelect">
+          <template #reference>
+            <i class="in-icon-plus-right"></i>
+          </template>
+        </van-popover>
       </template>
     </van-nav-bar>
     <div class="inverstigate-main log-detail-box">
@@ -30,7 +39,18 @@ export default {
     homeFooter,
     logDetailCard,
   },
+  data() {
+    return {
+      showPlusPopover: false, // 浮窗的标识位
+      popoverActions: [{ text: '新增图像侦查信息' },
+        { text: '新增嫌疑人信息' },
+        { text: '新增其他信息' }],
+    };
+  },
   methods: {
+    onSelect() {
+
+    },
     onClickLeft() {
       this.$router.push({
         name: 'investigate',
