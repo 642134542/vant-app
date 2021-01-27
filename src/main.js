@@ -5,6 +5,7 @@ import App from './App.vue'
 import Vant from 'vant';
 import { Lazyload } from 'vant';
 import 'vant/lib/index.css';
+import 'vant/lib/index.less';
 import 'amfe-flexible';
 
 import router from "./router";

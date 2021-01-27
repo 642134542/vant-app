@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-cycle
+// eslint-disable
 import { login, logOut, getUserInfo } from '@/api/user';
 import { resetRouter } from '@/router';
 
