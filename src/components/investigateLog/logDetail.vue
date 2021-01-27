@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="log-detail-main">
     <van-nav-bar
       title="日志详情"
       left-text="返回"
@@ -9,7 +9,7 @@
         <van-icon name="arrow-left" size="28"/>
       </template>
       <template #right>
-        <i class="in-icon-filter-right" @click="showPopover = !showPopover"></i>
+        <i class="in-icon-filter-right" @click="showPlusPopover = !showPlusPopover"></i>
         <van-popover
                 v-model="showPlusPopover"
                 trigger="click"
@@ -42,14 +42,16 @@ export default {
   data() {
     return {
       showPlusPopover: false, // 浮窗的标识位
-      popoverActions: [{ text: '新增图像侦查信息' },
-        { text: '新增嫌疑人信息' },
-        { text: '新增其他信息' }],
+      popoverActions: [{ text: '新增图像侦查信息', routeName: 'suspectList' },
+        { text: '新增嫌疑人信息', routeName: 'suspectList' },
+        { text: '新增其他信息', routeName: 'suspectOther' }],
     };
   },
   methods: {
-    onSelect() {
-
+    onSelect(val) {
+      this.$router.push({
+        name: val.routeName,
+      })
     },
     onClickLeft() {
       this.$router.push({

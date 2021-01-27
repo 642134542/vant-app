@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="suspect-list-main">
     <van-nav-bar
             title="嫌疑人信息"
             left-arrow
             @click-left="onClickLeft">
       <template #left>
-        <van-icon name="arrow-left" size="32"/>
+        <van-icon name="arrow-left" size="28"/>
       </template>
       <template #right>
         <i class="in-icon-plus-right"></i>
@@ -34,9 +34,7 @@ export default {
   },
   methods: {
     onClickLeft() {
-      this.$router.push({
-        name: 'investigate',
-      })
+      this.$router.go(-1);
     },
   },
 };

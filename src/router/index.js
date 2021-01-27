@@ -62,21 +62,25 @@ export const staticRouterMap = [
       name: 'investigate',
       component: () => import('@/components/investigateLog/index'),
     }, {
-      path: ':id',
+      path: 'detail/:id',
       name: 'logDetail',
       component: () => import('@/components/investigateLog/logDetail'),
     }, {
       path: 'suspect/list',
-      name: 'suspectList',
+      name: 'suspectList', // 嫌疑人
       component: () => import('@/components/investigateLog/suspectList'),
     }, {
       path: 'stakeholder/list',
-      name: 'stakeHolderList',
+      name: 'stakeHolderList', // 干系人
       component: () => import('@/components/investigateLog/stakeHolderList'),
     }, {
       path: 'suspect/:id',
       name: 'suspectEditInfo',
       component: () => import('@/components/investigateLog/suspectEditInfo'),
+    }, {
+      path: 'suspectother',
+      name: 'suspectOther',
+      component: () => import('@/components/investigateLog/suspectOther'),
     }],
   },
   {
