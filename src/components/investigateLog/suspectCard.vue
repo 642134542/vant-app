@@ -21,11 +21,11 @@
         <span>1974-08-10</span>
       </div>
       <div class="suspect-card-row">
-        <label>身份证:</label>
+        <label>号码:</label>
         <span>429918197408100772</span>
       </div>
       <div class="suspect-card-row">
-        <label>身份证:</label>
+        <label>号码:</label>
         <span>429918197408100772</span>
       </div>
       <div class="suspect-card-row">

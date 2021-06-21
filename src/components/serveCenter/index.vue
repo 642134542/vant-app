@@ -22,7 +22,7 @@
             <van-popup v-model="serverPicker" position="bottom">
               <van-picker show-toolbar :columns="serverColumns" @confirm="serverConfirm" @cancel="serverPicker = false"></van-picker>
             </van-popup>
-            <van-field v-model="form.numName" name="案件编号" label="案件编号/名称" placeholder="请输入"></van-field>
+            <van-field v-model="form.numName" name="aj编号" label="aj编号/名称" placeholder="请输入"></van-field>
             <van-field readonly clickable name="calendar" :value="form.applyTime" label="申请时间" placeholder="请选择" @click="timePicker = true"></van-field>
             <van-calendar v-model="timePicker" @confirm="timeConfirm" />
           </van-form>
@@ -76,14 +76,14 @@ export default {
         statusFilter: '',
         applyStatus: '', // 申请状态
         applyServer: '', // 申请服务
-        numName: '', // 案件编号/名称
+        numName: '', // aj编号/名称
         applyTime: '' // 申请时间
       },
       applyTime: '',
       applyColumns: ['全部', '未提交', '办理中', '发回补充材料', '已驳回', '已退回', '结案', '已激活'],
       applyPicker: false,
       serverPicker: false,
-      serverColumns: ['银联账单/布控申请', '高速公路车辆查询', '反诈中心查询申请', '外卖信息查询申请', '互联网企业服务513', '网约车相关申请', '1020话单申请', '出租车相关申请', '刑事技术送检', '视频侦查服务', '互联网追逃服务'],
+      serverColumns: ['银联账单/布控申请', '高速公路车辆查询', 'fz中心查询申请', '外卖信息查询申请', '互联网企业服务513', '网约车相关申请', '1020话单申请', '出租车相关申请', '事情技术送检', '视频侦查服务', '互联网追逃服务'],
       timePicker: false,
 
     }

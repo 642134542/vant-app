@@ -78,7 +78,7 @@ module.exports = {
     config
       .plugin('html')
       .tap(args => {
-        args[0].title= 'xzapp';
+        args[0].title= 'vant-app';
         return args;
       })
   },

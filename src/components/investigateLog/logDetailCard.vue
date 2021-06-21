@@ -8,12 +8,12 @@
         <span class="log-export">录入</span>
       </div>
       <div class="log-detail-row">
-        <label>案件编号：</label>
+        <label>aj编号：</label>
         <span>A400059506900500000</span>
       </div>
       <div class="log-detail-row">
-        <label>案件名称：</label>
-        <span>张一公交车猥亵案</span>
+        <label>aj名称：</label>
+        <span>张一公交车被盗</span>
       </div>
       <div class="log-detail-row">
         <label>录入人：</label>
@@ -35,11 +35,11 @@
           XXXXXXXXXX）</span>
       </div>
       <div class="log-detail-row">
-        <label>案件编号：</label>
+        <label>aj编号：</label>
         <span>A400059506900500000</span>
       </div>
       <div class="log-detail-row">
-        <label>案件编号：</label>
+        <label>aj编号：</label>
         <span>A400059506900500000</span>
       </div>
     </div>

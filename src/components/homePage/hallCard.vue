@@ -37,7 +37,7 @@
             hasPer: 1
           },
           {
-            name: '反诈中心查询申请',
+            name: 'fz中心查询申请',
             icon: require('../../assets/icon-hall-fraud.png'),
             pending: 11,
             inProcess: 2,
@@ -79,7 +79,7 @@
             hasPer: 1
           },
           {
-            name: '刑事技术送检',
+            name: '事情技术送检',
             icon: require('../../assets/icon-hall-criminal.png'),
             pending: 11,
             inProcess: 2,
@@ -93,7 +93,7 @@
             hasPer: 1
           },
           {
-            name: '互联网追逃服务',
+            name: '互联网xx服务',
             icon: require('../../assets/icon-hall-escape.png'),
             pending: 6,
             inProcess: 2,

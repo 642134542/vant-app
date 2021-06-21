@@ -19,10 +19,10 @@
                 :rules="[{ required: true, message: '请填写关联嫌疑人' }]"/>
         <van-field
                 v-model="form.caseNumber"
-                name="关联案件"
-                label="关联案件"
-                placeholder="关联案件"
-                :rules="[{ required: true, message: '请填写关联案件' }]"
+                name="关联aj"
+                label="关联aj"
+                placeholder="关联aj"
+                :rules="[{ required: true, message: '请填写关联aj' }]"
         />
         <van-cell is-link title="地点" value="获取" />
         <!--获取时间-->
@@ -95,12 +95,12 @@ export default {
     return {
       form: {
         username: '', // 关联嫌疑人
-        caseNumber: '', // 关联案件
+        caseNumber: '', // 关联aj
         time: '', // 获取时间
         investigateType: '', // 侦查类别
         describe: '', // 描述
       },
-      investigateList: ['省厅', '审讯', '监管', '情报', '图侦', '刑事技术', '外调',
+      investigateList: ['省厅', '审讯', '监管', '情报', '图侦', '事情技术', '外调',
         '法制', '经侦', '网安', '综合'], // 侦查类别列表
       showInvestigatePicker: false, // 侦查类别选择模态
       showTimePicker: false, // 获取时间模态框

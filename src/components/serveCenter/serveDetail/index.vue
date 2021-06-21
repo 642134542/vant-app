@@ -14,7 +14,7 @@
       </div>
       <div class="card-content">
         <div>申请时间：{{detailInfo.detailTime}}</div>
-        <div>案件编号：{{detailInfo.detailNum}}</div>
+        <div>aj编号：{{detailInfo.detailNum}}</div>
         <div>简述：{{detailInfo.detailResume}}</div>
       </div>
       <div class="card-operation flex-between">
@@ -76,8 +76,8 @@
           detailInfo: {
             detailName: '互联网企业服务(513)',
             detailTime: '2020-11-18 13:25:55',
-            detailNum: 'A400059506900500000（张一公交车猥亵案)',
-            detailResume: '张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张一公交车猥亵案张张一公交车猥亵案张一公交车猥亵'
+            detailNum: 'A400059506900500000（张一公交车被盗)',
+            detailResume: '张一公交车被盗张一公交车被盗张一公交车被盗张一公交车被盗张一公交车被盗张一公交车被盗张张一公交车被盗张一公交车猥亵'
           }
         }
     },

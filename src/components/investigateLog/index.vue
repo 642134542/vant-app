@@ -31,9 +31,9 @@
                     placeholder="线索描述"/>
             <van-field
                     v-model="form.ajbh"
-                    name="案件编号"
-                    label="案件编号"
-                    placeholder="案件编号"/>
+                    name="aj编号"
+                    label="aj编号"
+                    placeholder="aj编号"/>
             <van-field
                     readonly
                     clickable
